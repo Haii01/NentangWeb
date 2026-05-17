@@ -72,3 +72,12 @@ body {
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
+
+.gap-custom {
+    gap: 2rem;
+}
+
+.section-padding {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
