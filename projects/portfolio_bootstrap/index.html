@@ -33,62 +33,101 @@
 </head>
 
 <body>
-    <header class="header">
-
-        <div class="container header-container">
-
-            <div class="logo">
-                Minh Hải
-            </div>
-
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-
-            <label for="menu-toggle" class="hamburger">
-            ☰
-        </label>
-
-            <nav class="nav">
-
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contact">Contact</a>
-
-            </nav>
-
-        </div>
-
-    </header>
-    <section class="hero">
-
-        <h1>
-            Hi, I'm <span class="highlight">Minh Hải</span>
-        </h1>
-
-        <p>
-            Full-Stack Developer | UI Designer | Problem Solver
-        </p>
-
-        <a href="#portfolio" class="cta-button">
-        View My Work
-    </a>
-
-    </section>
-    <section id="about" class="about-section">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
 
         <div class="container">
 
-            <div class="about-grid">
+            <a class="navbar-brand fw-bold text-primary" href="#">
+            Minh Hải
+        </a>
 
-                <div class="about-image">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
 
-                    <img src="https://via.placeholder.com/400x400" alt="Profile Photo">
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">
+                        About
+                    </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">
+                        Skills
+                    </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">
+                        Portfolio
+                    </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                        Contact
+                    </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+    <section class="min-vh-100 d-flex align-items-center justify-content-center text-center text-white" style="background: linear-gradient(135deg, #14b8a6 0%, #0f766e 100%);">
+
+        <div class="container">
+
+            <h1 class="display-2 fw-bold mb-3">
+
+                Hi, I'm
+
+                <span class="text-warning">
+                Minh Hải
+            </span>
+
+            </h1>
+
+            <p class="lead mb-4 opacity-75">
+
+                Full-Stack Developer | UI Designer
+
+            </p>
+
+            <a href="#portfolio" class="btn btn-light btn-lg px-5 py-3 fw-semibold">
+
+            View My Work →
+
+        </a>
+
+        </div>
+
+    </section>
+    <section id="about" class="py-5">
+
+        <div class="container">
+
+            <h2 class="text-center mb-5">
+                About Me
+            </h2>
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-5 text-center">
+
+                    <img src="./images/profile.jpg" class="rounded-circle img-fluid" style="max-width: 300px;">
 
                 </div>
 
-                <div class="about-content">
-
-                    <h2>About Me</h2>
+                <div class="col-lg-7">
 
                     <p class="lead">
                         I'm a passionate developer with 3+ years of experience building web applications that make a diference.
@@ -105,81 +144,119 @@
         </div>
 
     </section>
-    <section id="skills" class="skills-section">
+    <section id="skills" class="py-5 bg-light">
 
         <div class="container">
 
-            <h2>My Skills</h2>
+            <h2 class="text-center fw-bold mb-5">
+                My Skills
+            </h2>
 
-            <div class="skills-grid">
+            <div class="row g-4">
 
-                <div class="skill-item">
+                <!-- HTML -->
+                <div class="col-md-6">
 
-                    <div class="skill-header">
+                    <div class="mb-4">
 
-                        <span>HTML5</span>
+                        <div class="d-flex justify-content-between mb-2">
 
-                        <span>95%</span>
+                            <span class="fw-semibold">
+                            HTML5
+                        </span>
 
-                    </div>
+                            <span class="text-primary fw-semibold">
+                            95%
+                        </span>
 
-                    <div class="skill-bar">
+                        </div>
 
-                        <div class="skill-progress" data-width="95%"></div>
+                        <div class="progress" style="height: 12px;">
 
-                    </div>
+                            <div class="progress-bar bg-primary" style="width: 95%"></div>
 
-                </div>
-
-                <div class="skill-item">
-
-                    <div class="skill-header">
-
-                        <span>CSS3</span>
-
-                        <span>90%</span>
-
-                    </div>
-
-                    <div class="skill-bar">
-
-                        <div class="skill-progress" data-width="90%"></div>
+                        </div>
 
                     </div>
 
                 </div>
 
-                <div class="skill-item">
+                <!-- CSS -->
+                <div class="col-md-6">
 
-                    <div class="skill-header">
+                    <div class="mb-4">
 
-                        <span>JavaScript</span>
+                        <div class="d-flex justify-content-between mb-2">
 
-                        <span>85%</span>
+                            <span class="fw-semibold">
+                            CSS3
+                        </span>
 
-                    </div>
+                            <span class="text-primary fw-semibold">
+                            90%
+                        </span>
 
-                    <div class="skill-bar">
+                        </div>
 
-                        <div class="skill-progress" data-width="85%"></div>
+                        <div class="progress" style="height: 12px;">
+
+                            <div class="progress-bar bg-primary" style="width: 90%"></div>
+
+                        </div>
 
                     </div>
 
                 </div>
 
-                <div class="skill-item">
+                <!-- JavaScript -->
+                <div class="col-md-6">
 
-                    <div class="skill-header">
+                    <div class="mb-4">
 
-                        <span>React</span>
+                        <div class="d-flex justify-content-between mb-2">
 
-                        <span>80%</span>
+                            <span class="fw-semibold">
+                            JavaScript
+                        </span>
+
+                            <span class="text-primary fw-semibold">
+                            85%
+                        </span>
+
+                        </div>
+
+                        <div class="progress" style="height: 12px;">
+
+                            <div class="progress-bar bg-primary" style="width: 85%"></div>
+
+                        </div>
 
                     </div>
 
-                    <div class="skill-bar">
+                </div>
 
-                        <div class="skill-progress" data-width="80%"></div>
+                <!-- React -->
+                <div class="col-md-6">
+
+                    <div class="mb-4">
+
+                        <div class="d-flex justify-content-between mb-2">
+
+                            <span class="fw-semibold">
+                            React
+                        </span>
+
+                            <span class="text-primary fw-semibold">
+                            80%
+                        </span>
+
+                        </div>
+
+                        <div class="progress" style="height: 12px;">
+
+                            <div class="progress-bar bg-primary" style="width: 80%"></div>
+
+                        </div>
 
                     </div>
 
@@ -190,96 +267,160 @@
         </div>
 
     </section>
-    <section id="portfolio" class="portfolio-section">
+    <section id="portfolio" class="py-5">
 
         <div class="container">
 
-            <h2>My Portfolio</h2>
+            <h2 class="text-center fw-bold mb-5">
+                My Portfolio
+            </h2>
 
-            <div class="portfolio-filters">
+            <div class="row g-4">
 
-                <button class="filter-btn active">All</button>
-                <button class="filter-btn">Web</button>
-                <button class="filter-btn">Mobile</button>
-                <button class="filter-btn">Design</button>
+                <!-- Card 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
 
-            </div>
+                    <div class="card h-100 shadow-sm border-0 overflow-hidden">
 
-            <div class="portfolio-grid">
+                        <img src="https://picsum.photos/600/400?1" class="card-img-top" alt="Project">
 
-                <a href="#lightbox-1" class="lightbox-link">
+                        <div class="card-body">
 
-                    <div class="portfolio-item">
+                            <h5 class="card-title">
+                                E-Commerce Website
+                            </h5>
 
-                        <img src="https://via.placeholder.com/400x300" alt="">
-
-                        <div class="portfolio-overlay">
-
-                            <h3>E-Commerce Website</h3>
-
-                            <p>React + Node.js</p>
+                            <p class="card-text text-muted">
+                                React + Node.js
+                            </p>
 
                         </div>
 
                     </div>
 
-                </a>
+                </div>
 
-                <a href="#lightbox-2" class="lightbox-link">
+                <!-- Card 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
 
-                    <div class="portfolio-item">
+                    <div class="card h-100 shadow-sm border-0 overflow-hidden">
 
-                        <img src="https://via.placeholder.com/400x300/6366f1/ffffff" alt="">
+                        <img src="https://picsum.photos/600/400?2" class="card-img-top" alt="Project">
 
-                        <div class="portfolio-overlay">
+                        <div class="card-body">
 
-                            <h3>Dashboard UI</h3>
+                            <h5 class="card-title">
+                                Dashboard UI
+                            </h5>
 
-                            <p>Vue.js</p>
-
-                        </div>
-
-                    </div>
-
-                </a>
-
-                <a href="#lightbox-3" class="lightbox-link">
-
-                    <div class="portfolio-item">
-
-                        <img src="https://via.placeholder.com/400x300/8b5cf6/ffffff" alt="">
-
-                        <div class="portfolio-overlay">
-
-                            <h3>Portfolio Design</h3>
-
-                            <p>Figma</p>
+                            <p class="card-text text-muted">
+                                Vue.js
+                            </p>
 
                         </div>
 
                     </div>
 
-                </a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div class="card h-100 shadow-sm border-0 overflow-hidden">
+
+                        <img src="https://picsum.photos/600/400?3" class="card-img-top" alt="Project">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Portfolio Design
+                            </h5>
+
+                            <p class="card-text text-muted">
+                                Figma
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div class="card h-100 shadow-sm border-0 overflow-hidden">
+
+                        <img src="https://picsum.photos/600/400?4" class="card-img-top" alt="Project">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Mobile App
+                            </h5>
+
+                            <p class="card-text text-muted">
+                                Flutter
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div class="card h-100 shadow-sm border-0 overflow-hidden">
+
+                        <img src="https://picsum.photos/600/400?5" class="card-img-top" alt="Project">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Analytics Dashboard
+                            </h5>
+
+                            <p class="card-text text-muted">
+                                React + ChartJS
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div class="card h-100 shadow-sm border-0 overflow-hidden">
+
+                        <img src="https://picsum.photos/600/400?6" class="card-img-top" alt="Project">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Landing Page
+                            </h5>
+
+                            <p class="card-text text-muted">
+                                HTML + Bootstrap
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
 
         </div>
 
     </section>
-    <div id="lightbox-1" class="lightbox">
-        <img src="https://via.placeholder.com/1200x800">
-        <a href="#" class="lightbox-close">&times;</a>
-    </div>
 
-    <div id="lightbox-2" class="lightbox">
-        <img src="https://via.placeholder.com/1200x800/6366f1/ffffff">
-        <a href="#" class="lightbox-close">&times;</a>
-    </div>
-
-    <div id="lightbox-3" class="lightbox">
-        <img src="https://via.placeholder.com/1200x800/8b5cf6/ffffff">
-        <a href="#" class="lightbox-close">&times;</a>
-    </div>
     <section id="contact" class="contact-section">
 
         <div class="container">
