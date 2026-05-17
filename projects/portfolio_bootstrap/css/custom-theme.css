@@ -81,3 +81,25 @@ body {
     padding-top: 6rem;
     padding-bottom: 6rem;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #0f172a;
+    font-weight: 700;
+}
+
+.text-muted {
+    color: #64748b !important;
+}
+
+section {
+    scroll-margin-top: 100px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
