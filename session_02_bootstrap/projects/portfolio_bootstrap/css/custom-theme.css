@@ -1,0 +1,105 @@
+:root {
+    /* PRIMARY */
+    --bs-primary: #14b8a6;
+    --bs-primary-rgb: 20, 184, 166;
+    /* SECONDARY */
+    --bs-secondary: #64748b;
+    --bs-secondary-rgb: 100, 116, 139;
+    /* BODY */
+    --bs-body-font-family: 'Inter', sans-serif;
+    --bs-body-bg: #f8fafc;
+    --bs-body-color: #334155;
+    /* BORDER RADIUS */
+    --bs-border-radius: 0.5rem;
+    --bs-border-radius-lg: 1rem;
+}
+
+
+/* BODY */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc;
+}
+
+
+/* BUTTONS */
+
+.btn {
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: #14b8a6;
+    border-color: #14b8a6;
+}
+
+.btn-primary:hover {
+    background-color: #0d9488;
+    border-color: #0d9488;
+}
+
+
+/* CARDS */
+
+.card {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* INPUTS */
+
+.form-control,
+.form-select {
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+
+/* SECTION SPACING */
+
+.py-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.gap-custom {
+    gap: 2rem;
+}
+
+.section-padding {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #0f172a;
+    font-weight: 700;
+}
+
+.text-muted {
+    color: #64748b !important;
+}
+
+section {
+    scroll-margin-top: 100px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
