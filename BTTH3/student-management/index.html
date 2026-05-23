@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý sinh viên</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>QUẢN LÝ SINH VIÊN</h1>
+
+        <!-- Nút thêm -->
+        <div class="top-bar">
+            <button id="btnAddStudent">
+                + Thêm sinh viên
+            </button>
+        </div>
+
+        <!-- Thống kê -->
+        <div class="statistics">
+
+            <p>
+                Tổng số sinh viên:
+                <span id="totalStudents">0</span>
+            </p>
+
+            <p>
+                Điểm trung bình lớp:
+                <span id="averageScore">0</span>
+            </p>
+
+        </div>
+
+        <!-- Message -->
+        <div id="message"></div>
+
+        <!-- Bảng -->
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Mã SV</th>
+                    <th>Họ tên</th>
+                    <th>Ngày sinh</th>
+                    <th>Lớp</th>
+                    <th>Điểm TB</th>
+                    <th>Email</th>
+                    <th>Hành động</th>
+                </tr>
+
+            </thead>
+
+            <tbody id="studentList">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <!-- MODAL -->
+
+    <div class="modal hidden" id="studentModal">
+
+        <div class="modal-content">
+
+            <h2 id="modalTitle">
+                Thêm sinh viên
+            </h2>
+
+            <form id="studentForm">
+
+                <!-- Mã SV -->
+                <input type="text" id="studentId" placeholder="Mã sinh viên">
+                <p class="error" id="studentIdError"></p>
+
+                <!-- Họ tên -->
+                <input type="text" id="fullName" placeholder="Họ và tên">
+                <p class="error" id="fullNameError"></p>
+
+                <!-- Ngày sinh -->
+                <input type="text" id="birthDate" placeholder="dd/mm/yyyy">
+                <p class="error" id="birthDateError"></p>
+
+                <!-- Lớp -->
+                <input type="text" id="className" placeholder="Lớp học">
+                <p class="error" id="classNameError"></p>
+
+                <!-- Điểm -->
+                <input type="number" id="score" placeholder="Điểm trung bình">
+                <p class="error" id="scoreError"></p>
+
+                <!-- Email -->
+                <input type="text" id="email" placeholder="Email">
+                <p class="error" id="emailError"></p>
+
+                <!-- Buttons -->
+                <div class="form-buttons">
+
+                    <button type="submit" id="submitBtn">
+                        Lưu
+                    </button>
+
+                    <button type="button" id="btnClose">
+                        Hủy
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
