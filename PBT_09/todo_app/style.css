@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+}
+
+.container {
+    width: 700px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#todoForm {
+    display: flex;
+    gap: 10px;
+}
+
+#todoInput {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#todoInput:focus {
+    outline: none;
+    border-color: #4caf50;
+}
+
+#todoForm button {
+    border: none;
+    background: #4caf50;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#todoList {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    background: #f7f7f7;
+    border-radius: 8px;
+    transition: all .3s ease;
+}
+
+.todo-item:hover {
+    transform: translateY(-2px);
+}
+
+.todo-text {
+    flex: 1;
+    cursor: pointer;
+}
+
+.completed .todo-text {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.delete-btn {
+    border: none;
+    background: #f44336;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.edit-input {
+    flex: 1;
+    padding: 8px;
+}
+
+.footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+}
+
+.filter-btn {
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.filter-btn.active {
+    background: #4caf50;
+    color: white;
+}
+
+#clearCompleted {
+    border: none;
+    background: #ff9800;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}

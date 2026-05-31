@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Keyboard Shortcuts Demo</h1>
+
+        <img id="galleryImage" src="https://placehold.co/800x450?text=Image+1" alt="Gallery Image" tabindex="0">
+
+        <div class="controls">
+
+            <button id="prevBtn" aria-label="Previous image">
+            ← Previous
+        </button>
+
+            <button id="nextBtn" aria-label="Next image">
+            Next →
+        </button>
+
+        </div>
+
+        <p>
+            Keyboard: ← → | 1-9 | Space | Ctrl+K | Esc
+        </p>
+
+    </div>
+
+
+    <div id="modal" class="modal hidden">
+
+        <div class="modal-content">
+
+            <img id="modalImage" src="" alt="Preview Image">
+
+        </div>
+
+    </div>
+
+
+    <div id="overlay" class="overlay hidden">
+
+        <div class="palette">
+
+            <input type="text" id="commandInput" placeholder="Search command..." aria-label="Command Palette">
+
+            <ul id="commandList"></ul>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

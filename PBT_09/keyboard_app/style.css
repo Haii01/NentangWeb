@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+}
+
+#galleryImage {
+    width: 800px;
+    max-width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.controls {
+    margin-top: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:focus,
+input:focus,
+img:focus {
+    outline: 3px solid #2196f3;
+    outline-offset: 2px;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .6);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 120px;
+}
+
+.palette {
+    width: 600px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#commandInput {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+#commandList {
+    list-style: none;
+}
+
+#commandList li {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+#commandList li:hover {
+    background: #f2f2f2;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal img {
+    max-width: 90vw;
+    max-height: 90vh;
+}
+
+.hidden {
+    display: none;
+}
