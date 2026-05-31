@@ -40,3 +40,50 @@ Không có margin hai bên
 .container-md
 Mobile: full width
 Tablet trở lên: có max-width như container
+
+Câu C1
+1.
+- CSS thuần:
++ HTML ngắn
++ CSS file riêng
+- Tailwwind
++ HTML dài
++ gần như không cần CSS
+2.
+- CSS thuần
++ tốt cho logic tách biệt
++ dễ maintain small project
+- Tailwind
++ tốt cho tốc độ dev
++ tốt cho team lớn nếu thống nhất
+3.
+- CSS thuần
++ reuse tự nhiên
++ clean class
+- Tailwind
++ cần @apply hoặc framework
++ dễ lặp utility
+
+Câu C2
+- File HTML dùng Tailwind thường rất dài (nhiều classes). Tại sao Tailwind CSS file cuối cùng lại NHỎ HƠN Bootstrap CSS
+Vì Tailwind dùng: Utility-first + build-time optimization
+Cơ chế: Tailwind không load toàn bộ CSS mà chỉ giữ class được dùng trong project
+Còn Bootstrap: load ALL components (carousel, modal, grid, tooltip...) -> rất nhiều CSS không dùng
+- Giải thích Tailwind PurgeCSS (Tailwind JIT): quét toàn bộ HTML/JS -> tìm class đang dùng
+Sau đó:
++ xóa class không dùng
++ giữ lại class cần thiết
+- Khi nào KHÔNG nên dùng TailwindCSS? Cho 2 tình huống cụ thể.
++ Tình huống 1: Dự án nhỏ / HTML đơn giản
+Ví dụ:
+- landing page 1 trang
+- form đơn giản
+-> Tailwind sẽ làm HTML quá dài, khó đọc
++ Tình huống 2: Team không quen Tailwind
+Nếu team:
+- quen CSS truyền thống
+- không hiểu utility class
+-> code sẽ:
+khó maintain
+khó đọc
+dễ duplicate class
