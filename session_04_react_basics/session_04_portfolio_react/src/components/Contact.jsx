@@ -15,3 +15,32 @@ function Contact() {
 }
 
 export default Contact;
+const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    setFormData(prev => ({
+        ...prev,
+        [name]: value
+    }));
+};
+<form>
+    <input
+        type="text"
+        name="name"
+        value={formData.name}
+        onChange={handleChange}
+    />
+
+    <input
+        type="email"
+        name="email"
+        value={formData.email}
+        onChange={handleChange}
+    />
+
+    <textarea
+        name="message"
+        value={formData.message}
+        onChange={handleChange}
+    />
+</form>
