@@ -96,3 +96,36 @@ const validateForm = () => {
         {errors.message}
     </span>
 )}
+const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const validationErrors =
+        validateForm();
+
+    if (
+        Object.keys(validationErrors).length > 0
+    ) {
+        setErrors(validationErrors);
+        return;
+    }
+
+    console.log(
+        'Form submitted:',
+        formData
+    );
+
+    setFormData({
+        name: '',
+        email: '',
+        message: ''
+    });
+
+    alert('Message sent successfully!');
+};
+<form onSubmit={handleSubmit}></form>
+if (errors[name]) {
+    setErrors(prev => ({
+        ...prev,
+        [name]: ''
+    }));
+}
