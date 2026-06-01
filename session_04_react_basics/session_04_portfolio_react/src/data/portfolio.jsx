@@ -31,3 +31,23 @@ function Portfolio() {
 }
 
 export default Portfolio;
+import { useState } from 'react';
+import { projects } from '../data/projects';
+import ProjectCard from './ProjectCard';
+
+function Portfolio() {
+    const [items] = useState(projects);
+    const [filter, setFilter] = useState('all');
+
+    return (
+        <section id="portfolio" className="portfolio-section">
+            <div className="container">
+                <h2 className="text-center mb-5">
+                    My Portfolio
+                </h2>
+            </div>
+        </section>
+    );
+}
+
+export default Portfolio;
