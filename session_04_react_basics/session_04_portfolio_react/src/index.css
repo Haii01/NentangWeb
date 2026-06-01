@@ -131,3 +131,27 @@ body {
 .filter-btn:hover:not(.active) {
     background: #e0e7ff;
 }
+
+
+/* Error input styling */
+
+input.error,
+textarea.error {
+    border-color: #ef4444;
+    background-color: #fef2f2;
+}
+
+span.error {
+    color: #ef4444;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+
+/* Success input */
+
+input.valid,
+textarea.valid {
+    border-color: #22c55e;
+}
